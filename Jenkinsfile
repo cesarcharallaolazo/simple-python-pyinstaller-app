@@ -1,14 +1,23 @@
 pipeline {
-    agent none 
+    agent any
     stages {
-        stage('Build') { 
-            agent {
-                docker {
-                    image 'python:2-alpine' 
-                }
-            }
+        stage('Example') {
             steps {
-                sh 'python -m py_compile sources/add2vals.py sources/calc.py' 
+                echo 'Hello World Cesar'
+            }
+        }
+		stage('Example') {
+            steps {
+                echo 'Hello World 2 Augusto'
+            }
+        }
+		stage('Example') {
+            steps {
+                echo 'Hello World 3 Charalla'
+            }
+        }stage('Example') {
+            steps {
+                echo 'Hello World 4 Olazo'
             }
         }
     }
