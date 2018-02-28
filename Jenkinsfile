@@ -1,21 +1,21 @@
 pipeline {
     agent any
     stages {
-        stage('Example') {
+        stage('Build') {
             steps {
                 echo 'Hello World Cesar'
             }
         }
-		stage('Example') {
+		stage('Extract') {
             steps {
                 echo 'Hello World 2 Augusto'
             }
         }
-		stage('Example') {
+		stage('Test') {
             steps {
                 echo 'Hello World 3 Charalla'
             }
-        }stage('Example') {
+        }stage('Deploy') {
             steps {
                 echo 'Hello World 4 Olazo'
             }
