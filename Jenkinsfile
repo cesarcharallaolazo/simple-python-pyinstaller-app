@@ -15,7 +15,8 @@ pipeline {
             steps {
                 echo 'Hello World 3 Charalla'
             }
-        }stage('Deploy') {
+        }
+		stage('Deploy') {
             steps {
                 echo 'Hello World 4 Olazo'
             }
